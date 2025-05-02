@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:vozhaomuz/core/constants/app_text_styles.dart';
@@ -21,7 +22,7 @@ class CreateRoom extends StatelessWidget {
         ),
         MyButton(
           isEnabled: true,
-          padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+          padding: EdgeInsets.symmetric(vertical: 13, horizontal: 10),
           onPressed: () {},
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -30,12 +31,12 @@ class CreateRoom extends StatelessWidget {
         ),
         SizedBox(height: 20),
         HeaderWidget(
-          title: 'Шумораи калимахо',
+          title: 'words_count'.tr(),
           alignment: Alignment.centerLeft,
         ),
         MyButton(
           isEnabled: true,
-          padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+          padding: EdgeInsets.symmetric(vertical: 13, horizontal: 10),
           onPressed: () {},
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -43,7 +44,10 @@ class CreateRoom extends StatelessWidget {
           ),
         ),
         SizedBox(height: 20),
-        HeaderWidget(title: 'Шумораи тангахо', alignment: Alignment.centerLeft),
+        HeaderWidget(
+          title: 'coins_count'.tr(),
+          alignment: Alignment.centerLeft,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -115,7 +119,7 @@ class CreateRoom extends StatelessWidget {
             children: [
               Icon(Icons.door_back_door_outlined, color: Colors.white),
               SizedBox(width: 15),
-              Text('Сохтани хучра', style: AppTextStyles.bigTextButton),
+              Text('create_room'.tr(), style: AppTextStyles.bigTextButton),
             ],
           ),
         ),

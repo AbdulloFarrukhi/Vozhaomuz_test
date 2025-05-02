@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:vozhaomuz/core/constants/app_colors.dart';
 import 'package:vozhaomuz/features/mywords/presentation/widgets/add_words_button_widget.dart';
 import 'package:vozhaomuz/features/mywords/presentation/widgets/mybutton_widget.dart';
 
@@ -14,6 +15,7 @@ class _MywordsScreenState extends State<MywordsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.screenColors,
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 17, vertical: 40),
         child: Column(

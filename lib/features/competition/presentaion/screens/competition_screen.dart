@@ -28,6 +28,7 @@ class _CompetitionScreenState extends State<CompetitionScreen> {
             child: Column(
               children: [
                 MyButton(
+                  padding: EdgeInsets.zero,
                   width: double.infinity,
                   buttonColor: AppColors.buttonColor,
                   backButtonColor: AppColors.backButtonColor,
@@ -35,7 +36,9 @@ class _CompetitionScreenState extends State<CompetitionScreen> {
                   onPressed: null,
                   isEnabled: true,
                   child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                     decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
                       image: DecorationImage(
                         image: AssetImage('assets/images/samurai.png'),
                         fit: BoxFit.cover,

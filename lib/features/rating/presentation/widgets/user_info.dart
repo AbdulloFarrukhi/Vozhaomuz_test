@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class UserInfo extends StatelessWidget {
@@ -58,7 +59,7 @@ class UserInfo extends StatelessWidget {
                               size: 20,
                             ),
                             Text(
-                              'place',
+                              'place'.tr(),
                               style: TextStyle(
                                 color: Colors.blue,
                                 fontWeight: FontWeight.w900,

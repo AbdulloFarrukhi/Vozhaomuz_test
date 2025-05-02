@@ -38,8 +38,8 @@ class JoinRoom extends StatelessWidget {
         MyButton(
           onPressed: () {},
           width: double.infinity,
-          buttonColor: AppColors.backButtonColor,
           depth: 0,
+          buttonColor: AppColors.backButtonColor,
           child: Center(
             child: Text('Чучтучу хучра', style: AppTextStyles.bigTextButton),
           ),
